@@ -37,6 +37,7 @@ const TextContainer = () => {
 
   //initial play
   const handleRead = () => {
+    speechSynthesis.cancel();
     utterThis.text = value;
     utterThis.pitch = currentPitch;
     utterThis.rate = currentRate;
